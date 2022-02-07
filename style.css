@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #426696;
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #426696;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3{
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+main{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 65%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 1rem;
+    z-index: 2;
+    backdrop-filter: blur(0.3rem);
+    display: flex;
+}
+
+.circle1, .circle2{
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1{
+    top: 5%;
+    right: 5%;
+}
+
+.circle2{
+    bottom: 5%;
+    left: 5%;
+}
+
+
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 1rem;
+}
+
+.user img{
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.games{
+    flex: 2;
+}
+
+
+.pro a{
+    background: linear-gradient(to left top, #426696, #5fc2d1);
+    border-radius: 1rem;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.pro a:hover{
+    opacity: 1;
+    box-shadow: 3px 3px 15px rgba(122, 122, 122, 0.2);
+}
+
+.pro img{
+    width: 5rem;
+    height: 5rem;
+    display: none;
+}
+
+.pro a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*CARDS */
+
+.status{
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.games{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    background: linear-gradient(
+        to left top,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    gap: 1rem;
+    transition: 0.3s;
+}
+
+.card:hover{
+    background: linear-gradient(
+        to left top,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 1)
+    );
+}
+
+a{
+    text-decoration: none;
+}
+.card img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+}
+
+button{
+    border: none;
+    padding: 0.5rem;
+    background: linear-gradient(to left top, #426696, #5fc2d1);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+button:hover{
+    opacity: 1;
+    box-shadow: 3px 3px 15px rgba(122, 122, 122, 0.2);
+}
+
+.web_link a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 100px;
+    background: linear-gradient(to left top, #426696, #5fc2d1);
+    transition: 0.3s;
+    opacity: 0.8;
+}
